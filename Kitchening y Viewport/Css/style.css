@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1000px;
+    background-color: rgba(128, 128, 128, 0.308);
+}
+.logo{    
+    margin: auto auto;
+    display: block;
+        
+}
+
+.main-nav ul{
+    display: flex;
+    justify-content: space-between;   
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 100%;
+    
+    
+}
+.main-nav ul li{
+background-color: black;
+color: white;
+padding: 10px;
+width: 15%;
+text-align: center;
+text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.vip-products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.vip-products article{
+    width: 30%;
+}
+.photo{
+    width: 100%;
+}
+
+.photo-container{
+    position: relative;
+}
+.special{
+    position: absolute;
+    right: 7px;
+    top: 0;    
+}
+.zoom{
+    position: absolute;    
+    top: 40%;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(31, 29, 29, 0.815);
+    width: 100%;
+    display: block;
+}
+
+.main-footer ul{
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(197, 0, 0, 0.705);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.toggle-nav{
+    display: none;
+    margin: auto auto;
+    background-color: black;
+}
+.arrow-up{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;    
+}
+.more{
+    color: black;    
+    text-align: center;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 768px){
+
+    .container{
+        width: 768px;
+    }
+    .main-nav ul li{
+        width: 30%;
+        margin: 10px 0;
+        }
+
+    .vip-products article{
+            width: 48%;
+        }   
+    
+}
+
+@media only screen and (max-width: 320px){
+
+
+    .container{
+        width: auto;
+    }
+    .main-nav ul{
+        display: block;
+    }
+    .main-nav ul li{
+        margin: 0;
+        width: auto;
+    }
+
+    .vip-products{
+        display: block;
+    }
+    .vip-products article{
+        width: 100%;
+        margin: 20px 0;
+        border-top: 10px solid black;
+    }  
+    .main-footer ul{
+        display: block;
+    }
+    .zoom{
+    display: none;
+    }
+
+    .toggle-nav{
+        display: block;  
+        text-align: center;          
+    }
+    .arrow-up{
+        display: block;
+        size: 10vh;
+        background-color: rgba(128, 128, 128, 0.705);
+        color: white;
+    }
+}
